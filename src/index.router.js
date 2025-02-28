@@ -1,6 +1,6 @@
 
-import authRouter from '../routes/auth.router.js';
-import stellarRoutes from '../routes/stellarRoutes.js';
+import authRouter from './routes/auth.router.js';
+import stellarRoutes from './routes/stellarRoutes.js';
 import cors from 'cors';
 
 const bootstrab = (app, express) => {
