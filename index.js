@@ -2,6 +2,7 @@ import express from "express"
 import dotenv from "dotenv"
 import connectDB from "./database/connection.js"
 import bootstrab from "./src/index.router.js";
+import serverless from "serverless-http"
 dotenv.config();
 
 const app = express();
