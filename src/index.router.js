@@ -14,11 +14,15 @@ const bootstrab = (app,express) => {
         }
         express.json()(req,res,next);
     })
+    app.use(express.json());
 
     app.use(express.urlencoded({ extended: false }));
 
     app.use("/auth" , authRouter);
     app.use('/api/stellar', stellarRoutes);
+
+    module.exports = app;
+    module.exports.handler = serverless(app);
 
     app.all("*" , (req,res,next) => {
         return next(new Error("page not found" , {cause : 404}))
