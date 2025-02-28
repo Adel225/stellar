@@ -1,5 +1,6 @@
-import authRouter from './routes/auth.router.js';
-import stellarRoutes from './routes/stellarRoutes.js';
+
+import authRouter from '../routes/auth.router.js';
+import stellarRoutes from '../routes/stellarRoutes.js';
 import cors from 'cors';
 
 const bootstrab = (app, express) => {
@@ -34,5 +35,5 @@ const bootstrab = (app, express) => {
     });
 };
 
-// ✅ Correct ES module export (NO `module.exports`)
+
 export default bootstrab;

@@ -16,6 +16,5 @@ app.listen(PORT, () => {
     console.log(`App is running on port ${PORT} ......`);
 });
 
-// ✅ Correct ES module export
 export const handler = serverless(app);
 export default app;
