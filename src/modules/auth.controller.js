@@ -1,4 +1,4 @@
-import bcrypt,{ compareSync, hashSync } from "bcrypt";
+import bcrypt,{ compareSync, hashSync } from "bcryptjs";
 import userModel from "../../database/models/user.model.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import crypto from 'crypto'
