@@ -4,7 +4,6 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import crypto from 'crypto'
 import  jwt  from "jsonwebtoken";
 import tokenModel from "../../database/models/token.mode.js";
-// import randomstring from "randomstring";
 import { sendEmail } from "../../src/utils/sendEmails.js";
 import * as StellarSdk from 'stellar-sdk';
 
