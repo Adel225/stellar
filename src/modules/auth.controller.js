@@ -52,7 +52,7 @@ export const signup = asyncHandler(async (req,res,next) => {
         country
     })
     
-    const link = `http://localhost:3000/auth/confirmEmail/${activationCode}`
+    const link = `https://stellar-production-c090.up.railway.app/auth/confirmEmail/${activationCode}`
     const sent = await sendEmail({
         to:email,
         subject: "Confirm your email",
