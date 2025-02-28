@@ -34,5 +34,5 @@ const bootstrab = (app, express) => {
     });
 };
 
-// ✅ Correct ES module export (NO `module.exports`)
+// ✅ Only use `export default` (NO `module.exports`)
 export default bootstrab;
